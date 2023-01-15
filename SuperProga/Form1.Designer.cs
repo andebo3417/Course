@@ -29,48 +29,55 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelMainMenu = new System.Windows.Forms.Panel();
             this.btnMarathonText = new System.Windows.Forms.Button();
-            this.btnTicket = new System.Windows.Forms.Button();
             this.btnThemeText = new System.Windows.Forms.Button();
-            this.btnMenu = new System.Windows.Forms.Button();
             this.btnTicketText = new System.Windows.Forms.Button();
-            this.btnMarathon = new System.Windows.Forms.Button();
             this.btnExamText = new System.Windows.Forms.Button();
-            this.btnTheme = new System.Windows.Forms.Button();
-            this.btnExam = new System.Windows.Forms.Button();
             this.panelExam = new System.Windows.Forms.Panel();
             this.panel_menu = new System.Windows.Forms.Panel();
             this.panelTicket = new System.Windows.Forms.Panel();
             this.panelTheme = new System.Windows.Forms.Panel();
             this.panelMarathon = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
+            this.panelTheory = new System.Windows.Forms.Panel();
+            this.btnTheoryText = new System.Windows.Forms.Button();
+            this.btnTheory = new System.Windows.Forms.Button();
+            this.btnMarathon = new System.Windows.Forms.Button();
+            this.btnTheme = new System.Windows.Forms.Button();
+            this.btnTicket = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.btnExam = new System.Windows.Forms.Button();
+            this.panelHello = new System.Windows.Forms.Panel();
+            this.panelMainMenu.SuspendLayout();
             this.panelTicket.SuspendLayout();
             this.panelTheme.SuspendLayout();
             this.panelMarathon.SuspendLayout();
+            this.panelTheory.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // panelMainMenu
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.panelMarathon);
-            this.panel1.Controls.Add(this.panelTheme);
-            this.panel1.Controls.Add(this.panelTicket);
-            this.panel1.Controls.Add(this.btnMenu);
-            this.panel1.Controls.Add(this.btnExamText);
-            this.panel1.Controls.Add(this.btnExam);
-            this.panel1.Controls.Add(this.panelExam);
-            this.panel1.Controls.Add(this.panel_menu);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(157, 451);
-            this.panel1.TabIndex = 0;
+            this.panelMainMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelMainMenu.Controls.Add(this.panelTheory);
+            this.panelMainMenu.Controls.Add(this.panelMarathon);
+            this.panelMainMenu.Controls.Add(this.panelTheme);
+            this.panelMainMenu.Controls.Add(this.panelTicket);
+            this.panelMainMenu.Controls.Add(this.btnMenu);
+            this.panelMainMenu.Controls.Add(this.btnExamText);
+            this.panelMainMenu.Controls.Add(this.btnExam);
+            this.panelMainMenu.Controls.Add(this.panelExam);
+            this.panelMainMenu.Controls.Add(this.panel_menu);
+            this.panelMainMenu.Location = new System.Drawing.Point(0, 0);
+            this.panelMainMenu.Name = "panelMainMenu";
+            this.panelMainMenu.Size = new System.Drawing.Size(160, 451);
+            this.panelMainMenu.TabIndex = 0;
             // 
             // btnMarathonText
             // 
             this.btnMarathonText.BackColor = System.Drawing.Color.Transparent;
             this.btnMarathonText.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnMarathonText.FlatAppearance.BorderSize = 0;
+            this.btnMarathonText.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSlateGray;
             this.btnMarathonText.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
             this.btnMarathonText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMarathonText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -85,27 +92,12 @@
             this.btnMarathonText.MouseEnter += new System.EventHandler(this.BtnMarathon_Highlight);
             this.btnMarathonText.MouseLeave += new System.EventHandler(this.BtnMarathon_HighlightRemove);
             // 
-            // btnTicket
-            // 
-            this.btnTicket.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnTicket.BackgroundImage = global::SuperProga.Properties.Resources.ticket;
-            this.btnTicket.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTicket.FlatAppearance.BorderSize = 0;
-            this.btnTicket.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
-            this.btnTicket.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTicket.Location = new System.Drawing.Point(7, 5);
-            this.btnTicket.Name = "btnTicket";
-            this.btnTicket.Size = new System.Drawing.Size(35, 35);
-            this.btnTicket.TabIndex = 1;
-            this.btnTicket.UseVisualStyleBackColor = false;
-            this.btnTicket.MouseEnter += new System.EventHandler(this.BtnTicket_Highlight);
-            this.btnTicket.MouseLeave += new System.EventHandler(this.BtnTicket_HighlightRemove);
-            // 
             // btnThemeText
             // 
             this.btnThemeText.BackColor = System.Drawing.Color.Transparent;
             this.btnThemeText.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnThemeText.FlatAppearance.BorderSize = 0;
+            this.btnThemeText.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSlateGray;
             this.btnThemeText.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
             this.btnThemeText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnThemeText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -120,27 +112,12 @@
             this.btnThemeText.MouseEnter += new System.EventHandler(this.BtnTheme_Highlight);
             this.btnThemeText.MouseLeave += new System.EventHandler(this.BtnTheme_HighlightRemove);
             // 
-            // btnMenu
-            // 
-            this.btnMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenu.BackgroundImage")));
-            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMenu.FlatAppearance.BorderSize = 0;
-            this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
-            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMenu.Location = new System.Drawing.Point(7, 6);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(35, 35);
-            this.btnMenu.TabIndex = 1;
-            this.btnMenu.UseVisualStyleBackColor = false;
-            this.btnMenu.MouseEnter += new System.EventHandler(this.PanelMenu_Highlight);
-            this.btnMenu.MouseLeave += new System.EventHandler(this.PanelMenu_HighlightRemove);
-            // 
             // btnTicketText
             // 
             this.btnTicketText.BackColor = System.Drawing.Color.Transparent;
             this.btnTicketText.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnTicketText.FlatAppearance.BorderSize = 0;
+            this.btnTicketText.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSlateGray;
             this.btnTicketText.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
             this.btnTicketText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTicketText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -155,27 +132,12 @@
             this.btnTicketText.MouseEnter += new System.EventHandler(this.BtnTicket_Highlight);
             this.btnTicketText.MouseLeave += new System.EventHandler(this.BtnTicket_HighlightRemove);
             // 
-            // btnMarathon
-            // 
-            this.btnMarathon.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnMarathon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMarathon.BackgroundImage")));
-            this.btnMarathon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMarathon.FlatAppearance.BorderSize = 0;
-            this.btnMarathon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
-            this.btnMarathon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMarathon.Location = new System.Drawing.Point(7, 8);
-            this.btnMarathon.Name = "btnMarathon";
-            this.btnMarathon.Size = new System.Drawing.Size(35, 35);
-            this.btnMarathon.TabIndex = 1;
-            this.btnMarathon.UseVisualStyleBackColor = false;
-            this.btnMarathon.MouseEnter += new System.EventHandler(this.BtnMarathon_Highlight);
-            this.btnMarathon.MouseLeave += new System.EventHandler(this.BtnMarathon_HighlightRemove);
-            // 
             // btnExamText
             // 
             this.btnExamText.BackColor = System.Drawing.Color.Transparent;
             this.btnExamText.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnExamText.FlatAppearance.BorderSize = 0;
+            this.btnExamText.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSlateGray;
             this.btnExamText.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
             this.btnExamText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExamText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -187,48 +149,18 @@
             this.btnExamText.Text = "Экзамен";
             this.btnExamText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExamText.UseVisualStyleBackColor = false;
+            this.btnExamText.Click += new System.EventHandler(this.test);
             this.btnExamText.MouseEnter += new System.EventHandler(this.BtnExam_Highlight);
             this.btnExamText.MouseLeave += new System.EventHandler(this.BtnExam_HighlightRemove);
-            // 
-            // btnTheme
-            // 
-            this.btnTheme.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnTheme.BackgroundImage = global::SuperProga.Properties.Resources.by_themes;
-            this.btnTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTheme.FlatAppearance.BorderSize = 0;
-            this.btnTheme.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
-            this.btnTheme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTheme.Location = new System.Drawing.Point(7, 7);
-            this.btnTheme.Name = "btnTheme";
-            this.btnTheme.Size = new System.Drawing.Size(35, 35);
-            this.btnTheme.TabIndex = 1;
-            this.btnTheme.UseVisualStyleBackColor = false;
-            this.btnTheme.MouseEnter += new System.EventHandler(this.BtnTheme_Highlight);
-            this.btnTheme.MouseLeave += new System.EventHandler(this.BtnTheme_HighlightRemove);
-            // 
-            // btnExam
-            // 
-            this.btnExam.BackColor = System.Drawing.Color.Transparent;
-            this.btnExam.BackgroundImage = global::SuperProga.Properties.Resources.exam;
-            this.btnExam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnExam.FlatAppearance.BorderSize = 0;
-            this.btnExam.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
-            this.btnExam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExam.Location = new System.Drawing.Point(7, 69);
-            this.btnExam.Name = "btnExam";
-            this.btnExam.Size = new System.Drawing.Size(35, 35);
-            this.btnExam.TabIndex = 1;
-            this.btnExam.UseVisualStyleBackColor = false;
-            this.btnExam.MouseEnter += new System.EventHandler(this.BtnExam_Highlight);
-            this.btnExam.MouseLeave += new System.EventHandler(this.BtnExam_HighlightRemove);
             // 
             // panelExam
             // 
             this.panelExam.Location = new System.Drawing.Point(0, 61);
             this.panelExam.Margin = new System.Windows.Forms.Padding(0);
             this.panelExam.Name = "panelExam";
-            this.panelExam.Size = new System.Drawing.Size(157, 51);
+            this.panelExam.Size = new System.Drawing.Size(160, 51);
             this.panelExam.TabIndex = 1;
+            this.panelExam.Click += new System.EventHandler(this.test);
             this.panelExam.MouseEnter += new System.EventHandler(this.BtnExam_Highlight);
             this.panelExam.MouseLeave += new System.EventHandler(this.BtnExam_HighlightRemove);
             // 
@@ -238,6 +170,7 @@
             this.panel_menu.Name = "panel_menu";
             this.panel_menu.Size = new System.Drawing.Size(50, 50);
             this.panel_menu.TabIndex = 1;
+            this.panel_menu.Click += new System.EventHandler(this.BtnMenu_Click);
             this.panel_menu.MouseEnter += new System.EventHandler(this.PanelMenu_Highlight);
             this.panel_menu.MouseLeave += new System.EventHandler(this.PanelMenu_HighlightRemove);
             // 
@@ -248,7 +181,7 @@
             this.panelTicket.Location = new System.Drawing.Point(0, 112);
             this.panelTicket.Margin = new System.Windows.Forms.Padding(0);
             this.panelTicket.Name = "panelTicket";
-            this.panelTicket.Size = new System.Drawing.Size(157, 51);
+            this.panelTicket.Size = new System.Drawing.Size(160, 51);
             this.panelTicket.TabIndex = 2;
             // 
             // panelTheme
@@ -258,7 +191,7 @@
             this.panelTheme.Location = new System.Drawing.Point(0, 163);
             this.panelTheme.Margin = new System.Windows.Forms.Padding(0);
             this.panelTheme.Name = "panelTheme";
-            this.panelTheme.Size = new System.Drawing.Size(157, 51);
+            this.panelTheme.Size = new System.Drawing.Size(160, 51);
             this.panelTheme.TabIndex = 3;
             // 
             // panelMarathon
@@ -268,28 +201,174 @@
             this.panelMarathon.Location = new System.Drawing.Point(0, 214);
             this.panelMarathon.Margin = new System.Windows.Forms.Padding(0);
             this.panelMarathon.Name = "panelMarathon";
-            this.panelMarathon.Size = new System.Drawing.Size(157, 51);
+            this.panelMarathon.Size = new System.Drawing.Size(160, 51);
             this.panelMarathon.TabIndex = 4;
+            // 
+            // panelTheory
+            // 
+            this.panelTheory.Controls.Add(this.btnTheory);
+            this.panelTheory.Controls.Add(this.btnTheoryText);
+            this.panelTheory.Location = new System.Drawing.Point(0, 400);
+            this.panelTheory.Margin = new System.Windows.Forms.Padding(0);
+            this.panelTheory.Name = "panelTheory";
+            this.panelTheory.Size = new System.Drawing.Size(160, 51);
+            this.panelTheory.TabIndex = 5;
+            this.panelTheory.MouseEnter += new System.EventHandler(this.BtnTheory_Highlight);
+            this.panelTheory.MouseLeave += new System.EventHandler(this.BtnTheory_HighlightRemove);
+            // 
+            // btnTheoryText
+            // 
+            this.btnTheoryText.BackColor = System.Drawing.Color.Transparent;
+            this.btnTheoryText.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTheoryText.FlatAppearance.BorderSize = 0;
+            this.btnTheoryText.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSlateGray;
+            this.btnTheoryText.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
+            this.btnTheoryText.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTheoryText.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnTheoryText.Location = new System.Drawing.Point(42, 10);
+            this.btnTheoryText.Name = "btnTheoryText";
+            this.btnTheoryText.Padding = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.btnTheoryText.Size = new System.Drawing.Size(109, 35);
+            this.btnTheoryText.TabIndex = 5;
+            this.btnTheoryText.Text = "Теория";
+            this.btnTheoryText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTheoryText.UseVisualStyleBackColor = false;
+            this.btnTheoryText.MouseEnter += new System.EventHandler(this.BtnTheory_Highlight);
+            this.btnTheoryText.MouseLeave += new System.EventHandler(this.BtnTheory_HighlightRemove);
+            // 
+            // btnTheory
+            // 
+            this.btnTheory.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnTheory.BackgroundImage = global::SuperProga.Properties.Resources.theory;
+            this.btnTheory.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTheory.FlatAppearance.BorderSize = 0;
+            this.btnTheory.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSlateGray;
+            this.btnTheory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
+            this.btnTheory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTheory.Location = new System.Drawing.Point(7, 8);
+            this.btnTheory.Name = "btnTheory";
+            this.btnTheory.Size = new System.Drawing.Size(35, 35);
+            this.btnTheory.TabIndex = 1;
+            this.btnTheory.UseVisualStyleBackColor = false;
+            this.btnTheory.MouseEnter += new System.EventHandler(this.BtnTheory_Highlight);
+            this.btnTheory.MouseLeave += new System.EventHandler(this.BtnTheory_HighlightRemove);
+            // 
+            // btnMarathon
+            // 
+            this.btnMarathon.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnMarathon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMarathon.BackgroundImage")));
+            this.btnMarathon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMarathon.FlatAppearance.BorderSize = 0;
+            this.btnMarathon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSlateGray;
+            this.btnMarathon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
+            this.btnMarathon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMarathon.Location = new System.Drawing.Point(7, 8);
+            this.btnMarathon.Name = "btnMarathon";
+            this.btnMarathon.Size = new System.Drawing.Size(35, 35);
+            this.btnMarathon.TabIndex = 1;
+            this.btnMarathon.UseVisualStyleBackColor = false;
+            this.btnMarathon.MouseEnter += new System.EventHandler(this.BtnMarathon_Highlight);
+            this.btnMarathon.MouseLeave += new System.EventHandler(this.BtnMarathon_HighlightRemove);
+            // 
+            // btnTheme
+            // 
+            this.btnTheme.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnTheme.BackgroundImage = global::SuperProga.Properties.Resources.by_themes;
+            this.btnTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTheme.FlatAppearance.BorderSize = 0;
+            this.btnTheme.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSlateGray;
+            this.btnTheme.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
+            this.btnTheme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTheme.Location = new System.Drawing.Point(7, 7);
+            this.btnTheme.Name = "btnTheme";
+            this.btnTheme.Size = new System.Drawing.Size(35, 35);
+            this.btnTheme.TabIndex = 1;
+            this.btnTheme.UseVisualStyleBackColor = false;
+            this.btnTheme.MouseEnter += new System.EventHandler(this.BtnTheme_Highlight);
+            this.btnTheme.MouseLeave += new System.EventHandler(this.BtnTheme_HighlightRemove);
+            // 
+            // btnTicket
+            // 
+            this.btnTicket.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnTicket.BackgroundImage = global::SuperProga.Properties.Resources.ticket;
+            this.btnTicket.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTicket.FlatAppearance.BorderSize = 0;
+            this.btnTicket.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSlateGray;
+            this.btnTicket.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
+            this.btnTicket.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTicket.Location = new System.Drawing.Point(7, 5);
+            this.btnTicket.Name = "btnTicket";
+            this.btnTicket.Size = new System.Drawing.Size(35, 35);
+            this.btnTicket.TabIndex = 1;
+            this.btnTicket.UseVisualStyleBackColor = false;
+            this.btnTicket.MouseEnter += new System.EventHandler(this.BtnTicket_Highlight);
+            this.btnTicket.MouseLeave += new System.EventHandler(this.BtnTicket_HighlightRemove);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnMenu.BackgroundImage")));
+            this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnMenu.FlatAppearance.BorderSize = 0;
+            this.btnMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSlateGray;
+            this.btnMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Location = new System.Drawing.Point(7, 6);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(35, 35);
+            this.btnMenu.TabIndex = 1;
+            this.btnMenu.UseVisualStyleBackColor = false;
+            this.btnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
+            this.btnMenu.MouseEnter += new System.EventHandler(this.PanelMenu_Highlight);
+            this.btnMenu.MouseLeave += new System.EventHandler(this.PanelMenu_HighlightRemove);
+            // 
+            // btnExam
+            // 
+            this.btnExam.BackColor = System.Drawing.Color.Transparent;
+            this.btnExam.BackgroundImage = global::SuperProga.Properties.Resources.exam;
+            this.btnExam.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExam.FlatAppearance.BorderSize = 0;
+            this.btnExam.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSlateGray;
+            this.btnExam.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
+            this.btnExam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExam.Location = new System.Drawing.Point(7, 69);
+            this.btnExam.Name = "btnExam";
+            this.btnExam.Size = new System.Drawing.Size(35, 35);
+            this.btnExam.TabIndex = 1;
+            this.btnExam.UseVisualStyleBackColor = false;
+            this.btnExam.Click += new System.EventHandler(this.test);
+            this.btnExam.MouseEnter += new System.EventHandler(this.BtnExam_Highlight);
+            this.btnExam.MouseLeave += new System.EventHandler(this.BtnExam_HighlightRemove);
+            // 
+            // panelHello
+            // 
+            this.panelHello.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panelHello.Location = new System.Drawing.Point(160, 0);
+            this.panelHello.Name = "panelHello";
+            this.panelHello.Size = new System.Drawing.Size(640, 451);
+            this.panelHello.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelHello);
+            this.Controls.Add(this.panelMainMenu);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.panel1.ResumeLayout(false);
+            this.panelMainMenu.ResumeLayout(false);
             this.panelTicket.ResumeLayout(false);
             this.panelTheme.ResumeLayout(false);
             this.panelMarathon.ResumeLayout(false);
+            this.panelTheory.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelMainMenu;
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Button btnMarathon;
         private System.Windows.Forms.Button btnTheme;
@@ -304,6 +383,10 @@
         private System.Windows.Forms.Panel panelMarathon;
         private System.Windows.Forms.Panel panelTheme;
         private System.Windows.Forms.Panel panelTicket;
+        private System.Windows.Forms.Panel panelTheory;
+        private System.Windows.Forms.Button btnTheory;
+        private System.Windows.Forms.Button btnTheoryText;
+        private System.Windows.Forms.Panel panelHello;
     }
 }
 
