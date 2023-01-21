@@ -172,11 +172,6 @@ namespace SuperProga
             }
         }
         
-        //Начало теста
-        private void Proceed_Click(object sender, EventArgs e)
-        {
-            
-        }
         private void BtnNext_Click(object sender, EventArgs e)
         {
             curQuestion++;

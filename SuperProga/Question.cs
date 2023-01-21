@@ -17,9 +17,9 @@ namespace SuperProga
         private int rightAnswer_;
         private string theory_;
         private int hasImg_;
-        private static string nullPath = "placeholder";
 
         public static Question[] questionList;
+        public static Theory[] theoryList;
         public static string[][] themes =
             {
                 new string[] {"theme1", "theme1", "theme1" },
@@ -122,6 +122,11 @@ namespace SuperProga
             using (AppContext db = new AppContext())
             {
                 questionList = db.Questions.ToArray();
+            }
+
+            using (AppContextTheory db = new AppContextTheory())
+            {
+                theoryList = db.Questions.ToArray();
             }
         }
 

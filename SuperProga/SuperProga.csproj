@@ -157,6 +157,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppContext.cs" />
+    <Compile Include="AppContextTHeory.cs" />
     <Compile Include="ExamForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +191,13 @@
     <Compile Include="ThemeHelloForm.Designer.cs">
       <DependentUpon>ThemeHelloForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Theory.cs" />
+    <Compile Include="TheoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheoryForm.Designer.cs">
+      <DependentUpon>TheoryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TicketHelloForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -221,6 +229,9 @@
     <EmbeddedResource Include="ThemeHelloForm.resx">
       <DependentUpon>ThemeHelloForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TheoryForm.resx">
+      <DependentUpon>TheoryForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TicketHelloForm.resx">
       <DependentUpon>TicketHelloForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -244,21 +255,6 @@
     <None Include="Resources\menu.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\menu1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\exam.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\by_themes.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ticket.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\theory.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\no_image.png" />
   </ItemGroup>
   <ItemGroup>
@@ -266,6 +262,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\right-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\marathon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\theme.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\theory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ticket.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quit.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
