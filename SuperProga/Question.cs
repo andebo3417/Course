@@ -106,16 +106,6 @@ namespace SuperProga
             this.rightAnswer = 1;
             this.theory = "Par 1.1";
         }
-        public Question(int id, string question, string theme, string answers, int rightAnswer, string theory, bool hasImg)
-        {
-            this.id = id;
-            this.question = question;
-            this.theme = theme;
-            this.answers = answers;
-            this.rightAnswer = rightAnswer;
-            this.theory = theory;
-            if (hasImg == true) ;
-        }
 
         public static void createList()
         {

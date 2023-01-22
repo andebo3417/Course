@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panelHello = new System.Windows.Forms.Panel();
-            this.btnProceed = new FontAwesome.Sharp.IconButton();
+            this.button1 = new System.Windows.Forms.Button();
             this.RtbHello = new System.Windows.Forms.RichTextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelHello.SuspendLayout();
@@ -39,7 +39,7 @@
             // panelHello
             // 
             this.panelHello.BackColor = System.Drawing.SystemColors.Control;
-            this.panelHello.Controls.Add(this.btnProceed);
+            this.panelHello.Controls.Add(this.button1);
             this.panelHello.Controls.Add(this.RtbHello);
             this.panelHello.Controls.Add(this.pictureBox2);
             this.panelHello.Location = new System.Drawing.Point(0, 0);
@@ -47,26 +47,22 @@
             this.panelHello.Size = new System.Drawing.Size(1037, 612);
             this.panelHello.TabIndex = 9;
             // 
-            // btnProceed
+            // button1
             // 
-            this.btnProceed.BackColor = System.Drawing.Color.SkyBlue;
-            this.btnProceed.FlatAppearance.BorderSize = 0;
-            this.btnProceed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProceed.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnProceed.IconChar = FontAwesome.Sharp.IconChar.Forward;
-            this.btnProceed.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnProceed.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnProceed.IconSize = 64;
-            this.btnProceed.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProceed.Location = new System.Drawing.Point(724, 466);
-            this.btnProceed.Name = "btnProceed";
-            this.btnProceed.Size = new System.Drawing.Size(250, 83);
-            this.btnProceed.TabIndex = 2;
-            this.btnProceed.Text = "Proceed";
-            this.btnProceed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProceed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnProceed.UseVisualStyleBackColor = false;
-            this.btnProceed.Click += new System.EventHandler(this.BtnProceed_Click);
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Image = global::SuperProga.Properties.Resources.quit;
+            this.button1.Location = new System.Drawing.Point(724, 471);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(194, 64);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Proceed";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.BtnProceed_Click);
             // 
             // RtbHello
             // 
@@ -81,7 +77,7 @@
             // 
             this.pictureBox2.BackgroundImage = global::SuperProga.Properties.Resources.exam;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(724, 185);
+            this.pictureBox2.Location = new System.Drawing.Point(562, 100);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(250, 216);
             this.pictureBox2.TabIndex = 0;
@@ -105,8 +101,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panelHello;
-        private FontAwesome.Sharp.IconButton btnProceed;
         private System.Windows.Forms.RichTextBox RtbHello;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button1;
     }
 }

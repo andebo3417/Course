@@ -28,29 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnProceed = new FontAwesome.Sharp.IconButton();
+            this.btnProceed = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnProceed
             // 
-            this.btnProceed.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnProceed.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnProceed.FlatAppearance.BorderSize = 0;
             this.btnProceed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProceed.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnProceed.IconChar = FontAwesome.Sharp.IconChar.Forward;
-            this.btnProceed.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnProceed.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnProceed.IconSize = 64;
-            this.btnProceed.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProceed.Location = new System.Drawing.Point(679, 442);
+            this.btnProceed.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnProceed.Image = global::SuperProga.Properties.Resources.back;
+            this.btnProceed.Location = new System.Drawing.Point(738, 499);
             this.btnProceed.Name = "btnProceed";
-            this.btnProceed.Size = new System.Drawing.Size(250, 83);
-            this.btnProceed.TabIndex = 3;
+            this.btnProceed.Size = new System.Drawing.Size(194, 64);
+            this.btnProceed.TabIndex = 4;
             this.btnProceed.Text = "Proceed";
             this.btnProceed.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProceed.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProceed.UseVisualStyleBackColor = false;
-            this.btnProceed.Click += new System.EventHandler(this.BtnProceed_Click);
             // 
             // MarathonHelloForm
             // 
@@ -67,6 +62,6 @@
 
         #endregion
 
-        private FontAwesome.Sharp.IconButton btnProceed;
+        private System.Windows.Forms.Button btnProceed;
     }
 }
