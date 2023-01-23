@@ -130,7 +130,7 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(49, 50);
             this.button5.TabIndex = 6;
-            this.button5.Text = "1";
+            this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // button6
@@ -140,7 +140,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(49, 50);
             this.button6.TabIndex = 7;
-            this.button6.Text = "1";
+            this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = true;
             // 
             // button7
@@ -150,7 +150,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(49, 50);
             this.button7.TabIndex = 8;
-            this.button7.Text = "1";
+            this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = true;
             // 
             // button8
@@ -160,7 +160,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(49, 50);
             this.button8.TabIndex = 9;
-            this.button8.Text = "1";
+            this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // TicketHelloForm
