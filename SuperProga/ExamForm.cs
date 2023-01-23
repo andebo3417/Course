@@ -29,6 +29,7 @@ namespace SuperProga
         {
             InitializeComponent();
             RtbQuestion.BorderStyle = BorderStyle.None;
+            rtbTheory.BorderStyle = BorderStyle.None;
             this.QuizMode = mode;
             questions = createList();
             answers = new int[questions.Length];
@@ -48,6 +49,7 @@ namespace SuperProga
         {
             InitializeComponent();
             RtbQuestion.BorderStyle = BorderStyle.None;
+            rtbTheory.BorderStyle = BorderStyle.None;
             this.QuizMode = mode;
             this.theme = theme;
             questions = createList();
@@ -60,6 +62,7 @@ namespace SuperProga
         {
             InitializeComponent();
             RtbQuestion.BorderStyle = BorderStyle.None;
+            rtbTheory.BorderStyle = BorderStyle.None;
             this.QuizMode = mode;
             questions = createList();
             answers = new int[questions.Length];
@@ -177,6 +180,7 @@ namespace SuperProga
                         default: break;
                     }
                 }
+                rtbTheory.Text = questions[curQuestion].theory;
             }
         }
         
@@ -299,6 +303,7 @@ namespace SuperProga
             panelBye.Size = new Size(1150, 750);
             panelBye.BringToFront();
             btnShowBye.Visible = true;
+            rtbTheory.Visible = true;
             btnEndExam.Enabled = false;
         }
         private void TimerExam_Tick(object sender, EventArgs e)

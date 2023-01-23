@@ -53,6 +53,7 @@
             this.btnShowBye = new System.Windows.Forms.Button();
             this.labelTime = new System.Windows.Forms.Label();
             this.timerExam = new System.Windows.Forms.Timer(this.components);
+            this.rtbTheory = new System.Windows.Forms.RichTextBox();
             this.panelQuiz.SuspendLayout();
             this.panelBye.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImage)).BeginInit();
@@ -61,10 +62,10 @@
             // RtbQuestion
             // 
             this.RtbQuestion.BackColor = System.Drawing.SystemColors.Control;
-            this.RtbQuestion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.RtbQuestion.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RtbQuestion.Location = new System.Drawing.Point(12, 316);
             this.RtbQuestion.Name = "RtbQuestion";
+            this.RtbQuestion.ReadOnly = true;
             this.RtbQuestion.Size = new System.Drawing.Size(1123, 90);
             this.RtbQuestion.TabIndex = 1;
             this.RtbQuestion.Text = "В каком случае водитель совершит вынужденную остановку?";
@@ -136,6 +137,7 @@
             // panelQuiz
             // 
             this.panelQuiz.BackColor = System.Drawing.SystemColors.Control;
+            this.panelQuiz.Controls.Add(this.rtbTheory);
             this.panelQuiz.Controls.Add(this.panelBye);
             this.panelQuiz.Controls.Add(this.btnNext);
             this.panelQuiz.Controls.Add(this.btnPrev);
@@ -363,6 +365,18 @@
             this.timerExam.Interval = 1000;
             this.timerExam.Tick += new System.EventHandler(this.TimerExam_Tick);
             // 
+            // rtbTheory
+            // 
+            this.rtbTheory.BackColor = System.Drawing.SystemColors.Control;
+            this.rtbTheory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rtbTheory.Location = new System.Drawing.Point(102, 651);
+            this.rtbTheory.Name = "rtbTheory";
+            this.rtbTheory.ReadOnly = true;
+            this.rtbTheory.Size = new System.Drawing.Size(948, 77);
+            this.rtbTheory.TabIndex = 13;
+            this.rtbTheory.Text = "";
+            this.rtbTheory.Visible = false;
+            // 
             // ExamForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -408,5 +422,6 @@
         private System.Windows.Forms.Button btnHideBye;
         private System.Windows.Forms.Button btnEndExam;
         private System.Windows.Forms.Button btnShowBye;
+        private System.Windows.Forms.RichTextBox rtbTheory;
     }
 }
