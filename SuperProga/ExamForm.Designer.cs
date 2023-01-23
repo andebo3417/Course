@@ -65,7 +65,7 @@
             this.RtbQuestion.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.RtbQuestion.Location = new System.Drawing.Point(12, 316);
             this.RtbQuestion.Name = "RtbQuestion";
-            this.RtbQuestion.Size = new System.Drawing.Size(1013, 58);
+            this.RtbQuestion.Size = new System.Drawing.Size(1123, 90);
             this.RtbQuestion.TabIndex = 1;
             this.RtbQuestion.Text = "В каком случае водитель совершит вынужденную остановку?";
             // 
@@ -74,12 +74,14 @@
             this.btnAnswer1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAnswer1.FlatAppearance.BorderSize = 0;
             this.btnAnswer1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnswer1.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAnswer1.Location = new System.Drawing.Point(239, 393);
+            this.btnAnswer1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnAnswer1.Location = new System.Drawing.Point(12, 412);
             this.btnAnswer1.Name = "btnAnswer1";
-            this.btnAnswer1.Size = new System.Drawing.Size(304, 61);
+            this.btnAnswer1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnAnswer1.Size = new System.Drawing.Size(1123, 51);
             this.btnAnswer1.TabIndex = 2;
             this.btnAnswer1.Text = "Answer1";
+            this.btnAnswer1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAnswer1.UseVisualStyleBackColor = false;
             this.btnAnswer1.Click += new System.EventHandler(this.BtnGiveAnswer);
             // 
@@ -88,12 +90,14 @@
             this.btnAnswer2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAnswer2.FlatAppearance.BorderSize = 0;
             this.btnAnswer2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnswer2.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAnswer2.Location = new System.Drawing.Point(562, 393);
+            this.btnAnswer2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnAnswer2.Location = new System.Drawing.Point(12, 469);
             this.btnAnswer2.Name = "btnAnswer2";
-            this.btnAnswer2.Size = new System.Drawing.Size(304, 61);
+            this.btnAnswer2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnAnswer2.Size = new System.Drawing.Size(1123, 51);
             this.btnAnswer2.TabIndex = 3;
             this.btnAnswer2.Text = "Answer2";
+            this.btnAnswer2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAnswer2.UseVisualStyleBackColor = false;
             this.btnAnswer2.Click += new System.EventHandler(this.BtnGiveAnswer);
             // 
@@ -102,12 +106,14 @@
             this.btnAnswer3.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAnswer3.FlatAppearance.BorderSize = 0;
             this.btnAnswer3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnswer3.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAnswer3.Location = new System.Drawing.Point(239, 460);
+            this.btnAnswer3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnAnswer3.Location = new System.Drawing.Point(12, 526);
             this.btnAnswer3.Name = "btnAnswer3";
-            this.btnAnswer3.Size = new System.Drawing.Size(304, 61);
+            this.btnAnswer3.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnAnswer3.Size = new System.Drawing.Size(1123, 51);
             this.btnAnswer3.TabIndex = 4;
             this.btnAnswer3.Text = "Answer3";
+            this.btnAnswer3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAnswer3.UseVisualStyleBackColor = false;
             this.btnAnswer3.Click += new System.EventHandler(this.BtnGiveAnswer);
             // 
@@ -116,12 +122,14 @@
             this.btnAnswer4.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnAnswer4.FlatAppearance.BorderSize = 0;
             this.btnAnswer4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAnswer4.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAnswer4.Location = new System.Drawing.Point(562, 460);
+            this.btnAnswer4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnAnswer4.Location = new System.Drawing.Point(12, 583);
             this.btnAnswer4.Name = "btnAnswer4";
-            this.btnAnswer4.Size = new System.Drawing.Size(304, 61);
+            this.btnAnswer4.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnAnswer4.Size = new System.Drawing.Size(1123, 51);
             this.btnAnswer4.TabIndex = 5;
             this.btnAnswer4.Text = "Answer4";
+            this.btnAnswer4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAnswer4.UseVisualStyleBackColor = false;
             this.btnAnswer4.Click += new System.EventHandler(this.BtnGiveAnswer);
             // 
@@ -142,7 +150,7 @@
             this.panelQuiz.Controls.Add(this.labelTime);
             this.panelQuiz.Location = new System.Drawing.Point(0, 0);
             this.panelQuiz.Name = "panelQuiz";
-            this.panelQuiz.Size = new System.Drawing.Size(1037, 612);
+            this.panelQuiz.Size = new System.Drawing.Size(1150, 750);
             this.panelQuiz.TabIndex = 8;
             // 
             // panelBye
@@ -158,7 +166,7 @@
             this.panelBye.Controls.Add(this.lblR);
             this.panelBye.Controls.Add(this.lblbW);
             this.panelBye.Controls.Add(this.labelResult);
-            this.panelBye.Location = new System.Drawing.Point(46, 79);
+            this.panelBye.Location = new System.Drawing.Point(960, 30);
             this.panelBye.Name = "panelBye";
             this.panelBye.Size = new System.Drawing.Size(187, 397);
             this.panelBye.TabIndex = 11;
@@ -278,7 +286,7 @@
             this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNext.FlatAppearance.BorderSize = 0;
             this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNext.Location = new System.Drawing.Point(965, 550);
+            this.btnNext.Location = new System.Drawing.Point(1075, 688);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(60, 50);
             this.btnNext.TabIndex = 7;
@@ -292,7 +300,7 @@
             this.btnPrev.Enabled = false;
             this.btnPrev.FlatAppearance.BorderSize = 0;
             this.btnPrev.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrev.Location = new System.Drawing.Point(12, 549);
+            this.btnPrev.Location = new System.Drawing.Point(12, 688);
             this.btnPrev.Name = "btnPrev";
             this.btnPrev.Size = new System.Drawing.Size(60, 50);
             this.btnPrev.TabIndex = 6;
@@ -304,9 +312,9 @@
             this.pBoxImage.BackgroundImage = global::SuperProga.Properties.Resources.no_image;
             this.pBoxImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pBoxImage.InitialImage = global::SuperProga.Properties.Resources.no_image;
-            this.pBoxImage.Location = new System.Drawing.Point(363, 30);
+            this.pBoxImage.Location = new System.Drawing.Point(338, 59);
             this.pBoxImage.Name = "pBoxImage";
-            this.pBoxImage.Size = new System.Drawing.Size(321, 228);
+            this.pBoxImage.Size = new System.Drawing.Size(265, 228);
             this.pBoxImage.TabIndex = 0;
             this.pBoxImage.TabStop = false;
             // 
@@ -316,7 +324,7 @@
             this.btnEndExam.FlatAppearance.BorderSize = 0;
             this.btnEndExam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEndExam.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnEndExam.Location = new System.Drawing.Point(831, 12);
+            this.btnEndExam.Location = new System.Drawing.Point(941, 11);
             this.btnEndExam.Name = "btnEndExam";
             this.btnEndExam.Size = new System.Drawing.Size(194, 64);
             this.btnEndExam.TabIndex = 12;
@@ -330,7 +338,7 @@
             this.btnShowBye.FlatAppearance.BorderSize = 0;
             this.btnShowBye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowBye.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnShowBye.Location = new System.Drawing.Point(831, 93);
+            this.btnShowBye.Location = new System.Drawing.Point(941, 93);
             this.btnShowBye.Name = "btnShowBye";
             this.btnShowBye.Size = new System.Drawing.Size(194, 64);
             this.btnShowBye.TabIndex = 11;
@@ -360,7 +368,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ClientSize = new System.Drawing.Size(1037, 612);
+            this.ClientSize = new System.Drawing.Size(1150, 750);
             this.Controls.Add(this.panelQuiz);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ExamForm";

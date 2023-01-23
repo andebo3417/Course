@@ -52,7 +52,7 @@
             this.panelMainMenu.Controls.Add(this.btnExam);
             this.panelMainMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMainMenu.Name = "panelMainMenu";
-            this.panelMainMenu.Size = new System.Drawing.Size(53, 612);
+            this.panelMainMenu.Size = new System.Drawing.Size(52, 749);
             this.panelMainMenu.TabIndex = 0;
             // 
             // button5
@@ -63,7 +63,7 @@
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button5.Image = global::SuperProga.Properties.Resources.menu;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 0);
+            this.button5.Location = new System.Drawing.Point(1, 1);
             this.button5.Margin = new System.Windows.Forms.Padding(0);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(55, 51);
@@ -81,7 +81,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Image = global::SuperProga.Properties.Resources.theory;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 561);
+            this.button1.Location = new System.Drawing.Point(1, 697);
             this.button1.Margin = new System.Windows.Forms.Padding(0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 51);
@@ -100,7 +100,7 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button4.Image = global::SuperProga.Properties.Resources.marathon;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 218);
+            this.button4.Location = new System.Drawing.Point(1, 218);
             this.button4.Margin = new System.Windows.Forms.Padding(0);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(160, 51);
@@ -119,7 +119,7 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button3.Image = global::SuperProga.Properties.Resources.theme;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(0, 167);
+            this.button3.Location = new System.Drawing.Point(1, 167);
             this.button3.Margin = new System.Windows.Forms.Padding(0);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(160, 51);
@@ -138,7 +138,7 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button2.Image = global::SuperProga.Properties.Resources.ticket;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(0, 116);
+            this.button2.Location = new System.Drawing.Point(1, 116);
             this.button2.Margin = new System.Windows.Forms.Padding(0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(160, 51);
@@ -157,7 +157,7 @@
             this.btnExam.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnExam.Image = global::SuperProga.Properties.Resources.exam;
             this.btnExam.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExam.Location = new System.Drawing.Point(0, 65);
+            this.btnExam.Location = new System.Drawing.Point(1, 65);
             this.btnExam.Margin = new System.Windows.Forms.Padding(0);
             this.btnExam.Name = "btnExam";
             this.btnExam.Size = new System.Drawing.Size(160, 51);
@@ -174,9 +174,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelInnerForm.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panelInnerForm.Location = new System.Drawing.Point(43, 0);
+            this.panelInnerForm.Location = new System.Drawing.Point(51, 0);
             this.panelInnerForm.Name = "panelInnerForm";
-            this.panelInnerForm.Size = new System.Drawing.Size(1044, 612);
+            this.panelInnerForm.Size = new System.Drawing.Size(1150, 750);
             this.panelInnerForm.TabIndex = 1;
             // 
             // Form1
@@ -184,12 +184,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1084, 611);
+            this.ClientSize = new System.Drawing.Size(1200, 748);
             this.Controls.Add(this.panelMainMenu);
             this.Controls.Add(this.panelInnerForm);
             this.DoubleBuffered = true;
-            this.MaximumSize = new System.Drawing.Size(1100, 650);
-            this.MinimumSize = new System.Drawing.Size(1100, 650);
+            this.MaximumSize = new System.Drawing.Size(1216, 787);
+            this.MinimumSize = new System.Drawing.Size(1216, 787);
             this.Name = "Form1";
             this.Text = "Form1";
             this.panelMainMenu.ResumeLayout(false);

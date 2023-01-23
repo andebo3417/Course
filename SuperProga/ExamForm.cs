@@ -118,7 +118,15 @@ namespace SuperProga
             btnAnswer1.Text = answerVars[0];
             btnAnswer2.Text = answerVars[1];
             btnAnswer3.Text = answerVars[2];
-            btnAnswer4.Text = answerVars[3];
+            if (answerVars.Length < 4)
+            {
+                btnAnswer4.Visible = false;
+            }
+            else
+            {
+                btnAnswer4.Visible = true;
+                btnAnswer4.Text = answerVars[3];
+            }
 
             if (isChecking == false)
             {
@@ -288,7 +296,7 @@ namespace SuperProga
             labelRight.Text = (questions.Length - mistakes - noAnswer).ToString();
             panelBye.Visible = true;
             panelBye.Location = new Point(0, 0);
-            panelBye.Size = new Size(1037, 612);
+            panelBye.Size = new Size(1150, 750);
             panelBye.BringToFront();
             btnShowBye.Visible = true;
             btnEndExam.Enabled = false;
