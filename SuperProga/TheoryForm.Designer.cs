@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panelPars = new System.Windows.Forms.Panel();
+            this.panelTheory = new System.Windows.Forms.Panel();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.rtbTheory = new System.Windows.Forms.RichTextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -56,9 +59,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panelTheory = new System.Windows.Forms.Panel();
-            this.rtbTheory = new System.Windows.Forms.RichTextBox();
-            this.btnBack = new System.Windows.Forms.Button();
             this.panelPars.SuspendLayout();
             this.panelTheory.SuspendLayout();
             this.SuspendLayout();
@@ -95,8 +95,46 @@
             this.panelPars.Controls.Add(this.label1);
             this.panelPars.Location = new System.Drawing.Point(0, 0);
             this.panelPars.Name = "panelPars";
-            this.panelPars.Size = new System.Drawing.Size(1037, 612);
+            this.panelPars.Size = new System.Drawing.Size(1163, 750);
             this.panelPars.TabIndex = 0;
+            // 
+            // panelTheory
+            // 
+            this.panelTheory.Controls.Add(this.btnBack);
+            this.panelTheory.Controls.Add(this.rtbTheory);
+            this.panelTheory.Location = new System.Drawing.Point(720, 402);
+            this.panelTheory.Name = "panelTheory";
+            this.panelTheory.Size = new System.Drawing.Size(1037, 612);
+            this.panelTheory.TabIndex = 54;
+            this.panelTheory.Visible = false;
+            // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnBack.Image = global::SuperProga.Properties.Resources.quit;
+            this.btnBack.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBack.Location = new System.Drawing.Point(860, 533);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(165, 67);
+            this.btnBack.TabIndex = 1;
+            this.btnBack.Text = "Назад";
+            this.btnBack.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBack.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // rtbTheory
+            // 
+            this.rtbTheory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rtbTheory.Location = new System.Drawing.Point(-157, 131);
+            this.rtbTheory.Name = "rtbTheory";
+            this.rtbTheory.ReadOnly = true;
+            this.rtbTheory.Size = new System.Drawing.Size(1028, 609);
+            this.rtbTheory.TabIndex = 0;
+            this.rtbTheory.Text = "";
             // 
             // label27
             // 
@@ -394,44 +432,6 @@
             this.label1.Size = new System.Drawing.Size(288, 24);
             this.label1.TabIndex = 27;
             this.label1.Text = "Правила дорожного движения";
-            // 
-            // panelTheory
-            // 
-            this.panelTheory.Controls.Add(this.btnBack);
-            this.panelTheory.Controls.Add(this.rtbTheory);
-            this.panelTheory.Location = new System.Drawing.Point(720, 402);
-            this.panelTheory.Name = "panelTheory";
-            this.panelTheory.Size = new System.Drawing.Size(1037, 612);
-            this.panelTheory.TabIndex = 54;
-            this.panelTheory.Visible = false;
-            // 
-            // rtbTheory
-            // 
-            this.rtbTheory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.rtbTheory.Location = new System.Drawing.Point(9, 0);
-            this.rtbTheory.Name = "rtbTheory";
-            this.rtbTheory.ReadOnly = true;
-            this.rtbTheory.Size = new System.Drawing.Size(1028, 609);
-            this.rtbTheory.TabIndex = 0;
-            this.rtbTheory.Text = "";
-            // 
-            // btnBack
-            // 
-            this.btnBack.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.btnBack.FlatAppearance.BorderSize = 0;
-            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnBack.Image = global::SuperProga.Properties.Resources.quit;
-            this.btnBack.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBack.Location = new System.Drawing.Point(860, 533);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(165, 67);
-            this.btnBack.TabIndex = 1;
-            this.btnBack.Text = "Назад";
-            this.btnBack.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBack.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBack.UseVisualStyleBackColor = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // TheoryForm
             // 

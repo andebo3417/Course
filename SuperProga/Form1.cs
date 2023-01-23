@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Documents;
 using System.Windows.Forms;
-using Microsoft.Data.Sqlite;
 
 namespace SuperProga
 {

@@ -326,6 +326,16 @@ namespace SuperProga
         {
             panelBye.Visible = true;
         }
+
+        private void panelBye_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pBoxImage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

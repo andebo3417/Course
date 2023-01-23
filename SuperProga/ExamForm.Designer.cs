@@ -35,6 +35,7 @@
             this.btnAnswer3 = new System.Windows.Forms.Button();
             this.btnAnswer4 = new System.Windows.Forms.Button();
             this.panelQuiz = new System.Windows.Forms.Panel();
+            this.rtbTheory = new System.Windows.Forms.RichTextBox();
             this.panelBye = new System.Windows.Forms.Panel();
             this.btnHideBye = new System.Windows.Forms.Button();
             this.labelNoAnswer = new System.Windows.Forms.Label();
@@ -53,7 +54,6 @@
             this.btnShowBye = new System.Windows.Forms.Button();
             this.labelTime = new System.Windows.Forms.Label();
             this.timerExam = new System.Windows.Forms.Timer(this.components);
-            this.rtbTheory = new System.Windows.Forms.RichTextBox();
             this.panelQuiz.SuspendLayout();
             this.panelBye.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxImage)).BeginInit();
@@ -155,6 +155,18 @@
             this.panelQuiz.Size = new System.Drawing.Size(1150, 750);
             this.panelQuiz.TabIndex = 8;
             // 
+            // rtbTheory
+            // 
+            this.rtbTheory.BackColor = System.Drawing.SystemColors.Control;
+            this.rtbTheory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rtbTheory.Location = new System.Drawing.Point(102, 651);
+            this.rtbTheory.Name = "rtbTheory";
+            this.rtbTheory.ReadOnly = true;
+            this.rtbTheory.Size = new System.Drawing.Size(948, 77);
+            this.rtbTheory.TabIndex = 13;
+            this.rtbTheory.Text = "";
+            this.rtbTheory.Visible = false;
+            // 
             // panelBye
             // 
             this.panelBye.BackColor = System.Drawing.SystemColors.ControlDark;
@@ -168,11 +180,12 @@
             this.panelBye.Controls.Add(this.lblR);
             this.panelBye.Controls.Add(this.lblbW);
             this.panelBye.Controls.Add(this.labelResult);
-            this.panelBye.Location = new System.Drawing.Point(960, 30);
+            this.panelBye.Location = new System.Drawing.Point(682, 3);
             this.panelBye.Name = "panelBye";
             this.panelBye.Size = new System.Drawing.Size(187, 397);
             this.panelBye.TabIndex = 11;
             this.panelBye.Visible = false;
+            this.panelBye.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBye_Paint);
             // 
             // btnHideBye
             // 
@@ -314,11 +327,12 @@
             this.pBoxImage.BackgroundImage = global::SuperProga.Properties.Resources.no_image;
             this.pBoxImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pBoxImage.InitialImage = global::SuperProga.Properties.Resources.no_image;
-            this.pBoxImage.Location = new System.Drawing.Point(338, 59);
+            this.pBoxImage.Location = new System.Drawing.Point(411, 61);
             this.pBoxImage.Name = "pBoxImage";
             this.pBoxImage.Size = new System.Drawing.Size(265, 228);
             this.pBoxImage.TabIndex = 0;
             this.pBoxImage.TabStop = false;
+            this.pBoxImage.Click += new System.EventHandler(this.pBoxImage_Click);
             // 
             // btnEndExam
             // 
@@ -364,18 +378,6 @@
             // 
             this.timerExam.Interval = 1000;
             this.timerExam.Tick += new System.EventHandler(this.TimerExam_Tick);
-            // 
-            // rtbTheory
-            // 
-            this.rtbTheory.BackColor = System.Drawing.SystemColors.Control;
-            this.rtbTheory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.rtbTheory.Location = new System.Drawing.Point(102, 651);
-            this.rtbTheory.Name = "rtbTheory";
-            this.rtbTheory.ReadOnly = true;
-            this.rtbTheory.Size = new System.Drawing.Size(948, 77);
-            this.rtbTheory.TabIndex = 13;
-            this.rtbTheory.Text = "";
-            this.rtbTheory.Visible = false;
             // 
             // ExamForm
             // 
